@@ -27,7 +27,7 @@ $(call inherit-product, vendor/aosp/common.mk)
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
 TARGET_BOOT_ANIMATION_RES := 720
-EXTENDED_BUILD_TYPE := OFFICIAL
+EXTENDED_BUILD_TYPE := UNOFFICIAL
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
