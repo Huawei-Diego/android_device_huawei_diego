@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_santoni.mk
+    $(LOCAL_DIR)/aosip_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-   aosp_santoni-userdebug \
-   aosp_santoni-eng
+   aosip_santoni-userdebug \
+   aosip_santoni-eng
