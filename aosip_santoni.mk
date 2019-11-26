@@ -26,7 +26,13 @@ $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 # Inherit from santoni device
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
-TARGET_BOOT_ANIMATION_RES := 720
+# GApps targets
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+
+# Official-ify
+AOSIP_BUILDTYPE := Official
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
@@ -43,6 +49,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Xiaomi/santoni/santoni:7.1.2/N2G47H/V9.5.10.0.NAMMIFD:user/release-keys
 
-# GApps targets
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
