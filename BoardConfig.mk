@@ -29,7 +29,7 @@ TARGET_TS_MAKEUP := true
 
 # Kernel
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 6016109
+TARGET_KERNEL_CLANG_VERSION := $(shell sh -c "find prebuilts/clang/host/linux-x86/ -type f -name clang -printf \"%T@ %Tc %p\n\" | sort -n | tail -n1 | sed 's/.*clang-\(.*\)\/bin.*/\1/'")
 TARGET_KERNEL_CONFIG := santoni_defconfig
 
 # Init
