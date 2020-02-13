@@ -20,32 +20,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common AEX stuff
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from santoni device
 $(call inherit-product, device/xiaomi/santoni/device.mk)
-
-# GApps targets
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-
-# Official-ify
-DERP_BUILDTYPE := Official
-
-# Device maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.derp.maintainer=Bikram_M
-
-#Updater json
-FORCE_JSON=1
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
 PRODUCT_DEVICE := santoni
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := derp_santoni
+PRODUCT_NAME := lineage_santoni
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
