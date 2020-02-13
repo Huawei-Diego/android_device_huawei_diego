@@ -23,25 +23,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from diego device
-$(call inherit-product, device/huawei/diego/device.mk)
+# Inherit from santoni device
+$(call inherit-product, device/xiaomi/santoni/device.mk)
 
-PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := Honor 6C
-PRODUCT_DEVICE := diego
-PRODUCT_MANUFACTURER := Huawei
-PRODUCT_NAME := lineage_diego
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Redmi 4X
+PRODUCT_DEVICE := santoni
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NAME := lineage_santoni
 
-PRODUCT_GMS_CLIENTID_BASE := android-huawei
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-TARGET_VENDOR_PRODUCT_NAME := diego
+TARGET_VENDOR_PRODUCT_NAME := santoni
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="diego-user 7.1.2 N2G47H V9.5.10.0.NAMMIFD release-keys"
+    PRIVATE_BUILD_DESC="santoni-user 7.1.2 N2G47H V9.5.10.0.NAMMIFD release-keys"
 
-<<<<<<< HEAD:lineage_santoni.mk
 BUILD_FINGERPRINT := Xiaomi/santoni/santoni:7.1.2/N2G47H/V9.5.10.0.NAMMIFD:user/release-keys
 
-=======
-BUILD_FINGERPRINT := Huawei/diego/diego:7.1.2/N2G47H/V9.5.10.0.NAMMIFD:user/release-keys
->>>>>>> 4cd631f... diego: rename santoni to diego:lineage_diego.mk

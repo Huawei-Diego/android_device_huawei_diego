@@ -14,12 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-<<<<<<< HEAD
     $(LOCAL_DIR)/lineage_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
    lineage_santoni-userdebug \
    lineage_santoni-eng
-=======
-    $(LOCAL_DIR)/lineage_diego.mk
->>>>>>> 4cd631f... diego: rename santoni to diego

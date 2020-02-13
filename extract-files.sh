@@ -18,10 +18,10 @@
 
 set -e
 
-export DEVICE=diego
+export DEVICE=santoni
 export DEVICE_BRINGUP_YEAR=2016
 
 DEVICE_COMMON=msm8937-common
-VENDOR=huawei
+VENDOR=xiaomi
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
