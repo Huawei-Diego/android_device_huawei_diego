@@ -17,7 +17,7 @@
 DEVICE_PATH := $(LOCAL_PATH)
 
 # Inherit from msm8937-common
-$(call inherit-product, device/xiaomi/msm8937-common/msm8937.mk)
+$(call inherit-product, device/huawei/msm8937-common/msm8937.mk)
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
@@ -50,4 +50,4 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
 
 # Inherit proprietary files
-$(call inherit-product, vendor/xiaomi/santoni/santoni-vendor.mk)
+$(call inherit-product, vendor/huawei/diego/diego-vendor.mk)

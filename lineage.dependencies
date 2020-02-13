@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "device_huawei_msm8937-common",
+    "target_path": "device/huawei/msm8937-common",
+    "branch": "ten",
+    "remote": "github"
+  }
+
+  {
+    "repository": "android_kernel_huawei_diego",
+    "target_path": "kernel/huawei/msm8937",
+    "branch": "pie-caf",
+    "remote": "github" 
+  }
+
+  {
+    "repository": "DerpFest-Devices/vendor_huawei_diego",
+    "target_path": "vendor/huawei",
+    "branch": "ten",
+    "remote": "github"
+  }
+]

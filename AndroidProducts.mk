@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_santoni.mk
+    $(LOCAL_DIR)/lineage_diego.mk
 
 COMMON_LUNCH_CHOICES := \
-   lineage_santoni-userdebug \
-   lineage_santoni-eng
+   lineage_diego-userdebug \
+   lineage_diego-eng
